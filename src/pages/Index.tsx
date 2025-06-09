@@ -76,7 +76,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img 
@@ -89,7 +89,7 @@ const Index = () => {
             Compre Agora
           </Button>
         </div>
-      </header>
+      </div>
 
       {/* Hero Section */}
       <section className="py-20 px-4">
