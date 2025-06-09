@@ -80,7 +80,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
               alt="Francis Life"
               className="h-12 w-auto"
             />
@@ -324,7 +324,7 @@ const Index = () => {
                 
                 <div className="text-center">
                   <img 
-                    src="/lovable-uploads/bfbdc3d5-14e4-4137-be9d-081d9f613a07.png"
+                    src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/bfbdc3d5-14e4-4137-be9d-081d9f613a07.png"
                     alt="Colágeno Francis Life"
                     className="mx-auto max-w-xs w-full"
                   />
@@ -408,7 +408,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center">
             <img 
-              src="/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
               alt="Francis Life"
               className="h-16 w-auto mx-auto mb-6 brightness-0 invert"
             />

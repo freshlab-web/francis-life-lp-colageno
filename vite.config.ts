@@ -19,4 +19,13 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/index-francislifecolageno.js`,
+        chunkFileNames: `assets/[name]-francislifecolageno.js`,
+        assetFileNames: `assets/[name]-francislifecolageno[extname]`,
+      }
+    }
+  },
 }));
