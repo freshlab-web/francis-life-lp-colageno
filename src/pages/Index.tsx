@@ -79,10 +79,8 @@ const Index = () => {
       <div className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
-            <img 
-              src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
-              alt="Francis Life"
-              className="h-12 w-auto"
+            <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
+              alt="Francis Life" className="h-12 w-auto"
             />
           </div>
           <Button className="bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg transform hover:scale-105 transition-all duration-200">
@@ -256,7 +254,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-6 bg-white/80 backdrop-blur hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0">
+              <Card key={index} data-index={index} className="p-6 bg-white/80 backdrop-blur hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0">
                 <CardContent className="p-0">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -285,7 +283,7 @@ const Index = () => {
                 <Badge className="bg-red-500 text-white mb-4 px-4 py-2 text-lg">
                   OFERTA ESPECIAL
                 </Badge>
-                <h2 className="text-4xl font-bold text-gray-800 mb-4 text-balance ">
+                <h2 className="text-4xl font-bold text-gray-800 mb-4 text-balance">
                   Garanta já seu Colágeno com Fórmula Exclusiva!
                 </h2>
               </div>
