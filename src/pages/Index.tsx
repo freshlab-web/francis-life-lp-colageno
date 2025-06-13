@@ -5,6 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Star, ShieldCheck, Truck, CreditCard, Clock, Heart, Sparkles, Zap, Droplets } from "lucide-react";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import Linkedin from "../components/IconeLinkedin"
+import Instagram from "../components/IconeInstagram"
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,10 +62,6 @@ const Index = () => {
     {
       question: "Quais benefícios terei para cabelo e unhas?",
       answer: "A biotina fortalece e estimula o crescimento, garantindo fios e unhas mais resistentes."
-    },
-    {
-      question: "Existe garantia ou risco zero?",
-      answer: "Sim! Garantia de satisfação para você experimentar sem receios."
     },
     {
       question: "Em quanto tempo posso ver resultados?",
@@ -126,10 +126,8 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Mulher sorrindo com pele radiante"
-                className="rounded-2xl shadow-2xl mx-auto max-w-md w-full"
+              <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@refs/heads/main/dist/lovable-uploads/colageno.webp"
+                   alt="Mulher sorrindo com pele radiante" className="rounded-2xl [filter:drop-shadow(0_0_30px_#0003)] mx-auto max-w-md w-full hover:[scale:1.02] duration-200"
               />
             </div>
           </div>
@@ -189,22 +187,22 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@refs/heads/main/dist/lovable-uploads/colagneo2.webp"
                 alt="Mulher sorrindo"
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-2xl shadow-2xl w-full h-[35rem] block object-cover object-[0_-9rem]"
               />
             </div>
             
             <div>
-              <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <h2 className="text-6xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent text-balance py-3 max-w-[450px]">
                 O que torna nosso colágeno único?
               </h2>
               
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Nosso colágeno em pó combina 4 ingredientes poderosos que atuam juntos para cuidar da sua beleza:
+              <p className="text-3xl text-gray-600 mb-8 leading-relaxed !leading-none max-w-[450px]">
+                nosso suplemento oferece qualidade premium e resultados visíveis.
               </p>
               
-              <div className="space-y-4 mb-8">
+              {/* <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
@@ -229,21 +227,21 @@ const Index = () => {
                     <strong className="text-gray-800">Biotina:</strong> fortalece cabelo e unhas, promovendo crescimento saudável
                   </div>
                 </div>
-              </div>
+              </div> 
               
               <p className="text-gray-600 italic">
                 Desenvolvido com nanotecnologia, nosso suplemento oferece qualidade premium e resultados visíveis.
-              </p>
+              </p>*/}
             </div>
           </div>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 [background-blend-mode:darken] bg-[linear-gradient(0deg,#0005,#0005),url('https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@refs/heads/main/dist/lovable-uploads/fundoColageno.webp')] bg-center bg-fixed bg-cover">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-8 text-gray-800">Nossa História</h2>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <h2 className="text-4xl font-bold mb-8 text-white">Fórmula Exclusiva</h2>
+          <p className="text-2xl text-gray-50 leading-relaxed text-balance">
             Sentindo que a pele perde vitalidade com o tempo? Nossa fórmula exclusiva foi criada para revitalizar sua beleza natural, atuando profundamente na hidratação, firmeza e energia da pele, além de cuidar do cabelo e unhas.
           </p>
         </div>
@@ -287,8 +285,8 @@ const Index = () => {
                 <Badge className="bg-red-500 text-white mb-4 px-4 py-2 text-lg">
                   OFERTA ESPECIAL
                 </Badge>
-                <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                  Garante já o seu!
+                <h2 className="text-4xl font-bold text-gray-800 mb-4 text-balance ">
+                  Garanta já seu Colágeno com Fórmula Exclusiva!
                 </h2>
               </div>
               
@@ -323,10 +321,8 @@ const Index = () => {
                 </div>
                 
                 <div className="text-center">
-                  <img 
-                    src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/bfbdc3d5-14e4-4137-be9d-081d9f613a07.png"
-                    alt="Colágeno Francis Life"
-                    className="mx-auto max-w-xs w-full"
+                  <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@refs/heads/main/dist/lovable-uploads/colageno.webp"
+                    alt="Colágeno Francis Life" className="mx-auto max-w-xs w-full"
                   />
                 </div>
               </div>
@@ -336,18 +332,8 @@ const Index = () => {
       </section>
 
       {/* Guarantee */}
-      <section className="py-20 px-4 bg-gradient-to-br from-green-50 to-blue-50">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="bg-white rounded-2xl p-12 shadow-xl">
-            <ShieldCheck className="w-16 h-16 text-green-600 mx-auto mb-6" />
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-              Garantia de Satisfação
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Experimente sem riscos. Se não notar os benefícios, devolvemos seu dinheiro em até 7 dias.
-            </p>
-          </div>
-        </div>
+      <section className="py-20 px-4 h-[500px] [background-blend-mode:darken] bg-[linear-gradient(0deg,#0005,#0005),url('https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@refs/heads/main/dist/lovable-uploads/fundoColageno2.webp')] bg-center bg-fixed bg-cover">
+        
       </section>
 
       {/* FAQ */}
@@ -370,6 +356,27 @@ const Index = () => {
             ))}
           </Accordion>
         </div>
+      </section>
+
+      <section className="[&_img]:object-contain [&_img]:mx-auto [&_img]:w-auto [&_img]:h-auto [&_ul]:items-center [&_img]:rounded-xl sm:px-20 px-5 py-20 [&_img]:w-auto [&_img]:object-contain [&_img]:block [&_img]:!h-[10rem]">
+        <h2 className="text-2xl md:text-4xl font-bold text-francis-dark mb-6 font-inter text-center text-gray-800">Francis Life é Destaque na mídia</h2> <br/><br/>
+        <Splide options={{perPage:4, pauseOnHover:false, pauseOnFocus:false, gap:'1rem', autoplay:true, type:'loop', pagination:false, breakpoints:{1120:{perPage:3},960:{perPage:2},640:{perPage:1}}}}>
+          <SplideSlide data-splide-interval="2500">
+            <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-creatina@refs/heads/main/dist/lovable-uploads/logo-redetv.webp"/>
+          </SplideSlide>
+
+          <SplideSlide data-splide-interval="2500">
+            <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-creatina@refs/heads/main/dist/lovable-uploads/logo-record.webp"/>
+          </SplideSlide>
+
+          <SplideSlide data-splide-interval="2500">
+            <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-creatina@refs/heads/main/dist/lovable-uploads/logo-donosbola.webp"/>
+          </SplideSlide>
+
+          <SplideSlide data-splide-interval="2500">
+            <img src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-creatina@refs/heads/main/dist/lovable-uploads/logo-boranews.webp"/>
+          </SplideSlide>
+        </Splide>
       </section>
 
       {/* Final CTA */}
@@ -404,20 +411,62 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center">
+      <footer className="bg-[#264653] text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="space-y-4">
             <img 
-              src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-colageno@main/dist/lovable-uploads/2a61e190-c51a-40d7-ac8d-30301795ad97.png" 
-              alt="Francis Life"
-              className="h-16 w-auto mx-auto mb-6 brightness-0 invert"
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/francis-life-lp-creatina@main/dist/lovable-uploads/074ae349-8ac1-44b2-8801-5f709c4c6b98.png" 
+              alt="Francis Life" 
+              className="h-12 w-auto brightness-0 invert"
             />
-            <p className="text-gray-400">
-              © 2024 Francis Life. Todos os direitos reservados.
+            <p className="text-white/80 leading-relaxed">
+              Mais do que suplementos, oferecemos soluções completas para sua saúde e bem-estar.
             </p>
+            <div className="flex justify-start gap-12 items-center [&_img]:w-32 mt-12 [&_svg]:w-5 [&_path]:fill-white">
+            <a href="https://www.linkedin.com/company/francis-life-produtos-naturais-ltda/" target="_blank"><Linkedin/></a>
+            <a href="https://www.instagram.com/francislifesuplementos/" target="_blank"><Instagram/></a>
+          </div>
+          </div>
+          
+          <div>
+            <h3 className="font-bold text-lg mb-4 font-inter">Links Rápidos</h3>
+            <ul className="space-y-2 text-white/80">
+              <li><a href="#diferenciais" className="hover:text-francis-gold transition-colors">Diferenciais</a></li>
+              <li><a href="#depoimentos" className="hover:text-francis-gold transition-colors">Depoimentos</a></li>
+              <li><a href="#faq" className="hover:text-francis-gold transition-colors">FAQ</a></li>
+              <li><a href="#oferta" className="hover:text-francis-gold transition-colors">Oferta Especial</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-bold text-lg mb-4 font-inter">Informações de contato:</h3>
+            <ul className="space-y-2 text-white/80">
+              <li>SAC: (11) 5588-7878</li>
+              <li>Email: <a href="mailto:atendimento@francislife.com.br" target="_blank">atendimento@francislife.com.br</a></li>
+              <li>Localização: <a target="_blank" href="https://www.google.com/maps?sca_esv=45c8bf4228d081b3&output=search&q=R.+Prof.+Apr%C3%ADgio+Gonzaga,+78+-+S%C3%A3o+Judas,+S%C3%A3o+Paulo+-+SP,+04303-000&source=lnms&fbs=AIIjpHxX5k-tONtMCu8aDeA7E5WMlVZjGnBiGIxaghLPqA-PlfgbLKUxiHcJwD8uXnH2piRyKM12_cSdaiHx34ICa6job54HaXV5uis1-k7h9VLxS8xdSsgmtZJ_jbed6F347LGucFrWzysfWZaudhxEXuj17yWsIk42rBNqT6PpnzHrad1eHSwEzPbq2m0hQFarm_qPBYmWfS4ORIyQfTop1lhtGB29Mw&entry=mc&ved=1t:200715&ictx=111">
+              R. Prof. Aprígio Gonzaga, 78 - São Judas, São Paulo - SP, 04303-000</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
+        
+        <div className="border-t border-white/20 pt-8 text-center">
+          <div className="flex justify-center gap-12 items-center [&_img]:w-32 mb-12">
+            <img src="https://www.francislifesuplementos.com.br/wp-content/uploads/2023/05/compra-segura.webp"/>
+            <img src="https://www.francislifesuplementos.com.br/wp-content/uploads/2023/05/site-seguro.png"/>
+          </div>
+
+          
+
+          <p className="text-white/60 flex items-center justify-center gap-2">
+            © 2024 Francis Life. Todos os direitos reservados. 
+            <span className="flex items-center gap-1">
+              Feito com <Heart className="w-4 h-4 text-francis-red" /> para sua saúde.
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
     </div>
   );
 };
